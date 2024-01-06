@@ -11,7 +11,7 @@ const Popular = () => {
                     <div>
                         <button className="text-orange-400" onClick={() => setShowPopup(true)}>Add More</button>
                     </div>
-                    {showPopup && <Modal />}
+                    {showPopup && <Modal setShowPopup={setShowPopup} showPopup={showPopup} />}
                 </div>
                 <div className='flex flex-wrap gap-8'>
                     {
