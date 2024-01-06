@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "name": "Chicken Cheese Burger",
+        "image": "../src/assets/burger.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Fried Rice",
+        "image": "../src/assets/fried rice.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Garlic bread",
+        "image": "../src/assets/garlic bread.jpeg"
+    },
+    {
+        "id": 4,
+        "name": "Cappucino",
+        "image": "../src/assets/cappucino.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Pizza",
+        "image": "../src/assets/pizza.jpeg"
+    }
+]
