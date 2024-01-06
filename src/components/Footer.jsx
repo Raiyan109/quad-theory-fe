@@ -6,7 +6,7 @@ import '../styles/footer.css'
 
 const Footer = () => {
     return (
-        <div className="bg-amber-500 w-full p-10 flex justify-around items-center gap-20 absolute bottom-0">
+        <div className="bg-amber-500 w-full p-10 flex justify-around items-center gap-20  bottom-0">
             <div className='flex flex-col gap-10 md:gap-20'>
                 <div>
                     <div className="flex items-center bg-white pl-2 h-16 md:h-9 rounded-xl">

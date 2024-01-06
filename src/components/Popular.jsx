@@ -1,13 +1,17 @@
+import { useState } from 'react';
 import Foods from '../../public/foods.json'
+import Modal from './Modal';
 const Popular = () => {
+    const [showPopup, setShowPopup] = useState(false)
     return (
         <div className="flex justify-center items-center mx-auto">
             <div>
                 <div className="flex justify-between items-center">
                     <h1>Popular</h1>
                     <div>
-                        <h3 className="text-orange-400">Add More</h3>
+                        <button className="text-orange-400" onClick={() => setShowPopup(true)}>Add More</button>
                     </div>
+                    {showPopup && <Modal />}
                 </div>
                 <div className='flex flex-wrap gap-8'>
                     {
