@@ -1,25 +1,28 @@
 import footerImg from '../assets/Image2.png'
 import { FaGoogle, FaTwitter, FaInstagram } from "react-icons/fa";
 import { FaArrowRightLong } from "react-icons/fa6";
+import '../styles/footer.css'
+
+
 const Footer = () => {
     return (
-        <div className="bg-orange-500 w-full p-10 flex justify-center items-center absolute bottom-0">
-            <div>
+        <div className="bg-amber-500 w-full p-10 flex justify-around items-center gap-20 absolute bottom-0">
+            <div className='flex flex-col gap-20'>
                 <div>
-                    <div className="flex items-center bg-white px-2 h-8 rounded-md">
+                    <div className="flex items-center bg-white pl-2 h-9 rounded-xl">
                         <input type="text"
-                            className=""
+                            className="inputText placeholder:text-gray-300"
                             placeholder="Enter your Email"
                         />
-                        <div className='bg-orange-600 text-white rounded-md text-sm py-1 px-2 flex items-center gap-1'>
+                        <div className='bg-orange-500 text-white rounded-lg text-sm py-1 pl-7 pr-4 mr-2 flex items-center gap-1'>
                             <button className=''>Subscribe</button>
                             <FaArrowRightLong />
                         </div>
                     </div>
                 </div>
-                <div className='flex items-center'>
+                <div className='flex items-center gap-10'>
                     <div>
-                        <h1 className='text-xl font-bold'>pti <span className='font-bold text-orange-500'>.</span></h1>
+                        <h1 className='text-xl font-bold'>pti<span className='font-bold text-orange-500 text-4xl'>.</span></h1>
                         <h2 className='text-sm font-medium'>Copyright@Tripp.All Right Reserved</h2>
                     </div>
                     <div className='flex justify-center items-center gap-2'>
@@ -36,7 +39,7 @@ const Footer = () => {
                 </div>
             </div>
             <div>
-                <img src={footerImg} alt="" className='w-56 h-56 object-contain' />
+                <img src={footerImg} alt="" className='w-64 h-64 object-contain' />
             </div>
         </div>
     );
