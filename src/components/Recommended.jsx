@@ -5,8 +5,11 @@ import { Pagination } from 'swiper/modules';
 import Foods from '../../public/foods.json'
 import '../styles/recommended.css'
 import RecSwiperBtn from './RecSwiperBtn';
+import { useState } from 'react';
+import Modal from './Modal';
 
 const Recommended = () => {
+    const [showPopup, setShowPopup] = useState(false)
     return (
         <div className='recContainer py-10 px-12 md:px-10 lg:px-32'>
             <Swiper
@@ -37,8 +40,11 @@ const Recommended = () => {
                 </div>
                 <div className='recArrow'>
                     <div>
-                        <button className="text-orange-400" >Add More</button>
+                        <button className="text-orange-400"
+                            onClick={() => setShowPopup(true)}
+                        >Add More</button>
                     </div>
+                    {showPopup && <Modal setShowPopup={setShowPopup} showPopup={showPopup} />}
                     <RecSwiperBtn />
                 </div>
                 {Foods.map((food) => (

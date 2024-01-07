@@ -17,7 +17,7 @@ const Modal = ({ setShowPopup, showPopup }) => {
     }
 
     return (
-        <div ref={popupRef} onClick={closePopup} className="fixed inset-0 bg-black bg-opacity-30 backdrop-blur-sm flex justify-center items-center">
+        <div ref={popupRef} onClick={closePopup} className="fixed inset-0 bg-black bg-opacity-30 backdrop-blur-sm flex justify-center items-center z-10">
             <div className="mt-10 flex flex-col gap-5">
                 <button
                     className="place-self-end bg-amber-400 text-orange-700 p-4 rounded-full"
