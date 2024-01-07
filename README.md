@@ -2,6 +2,8 @@
 
 This project is a webpage built to replicate a provided design and interact with a given API to display a list of items as cards. Users can also add new items using a form with frontend validation.
 
+[Live Link](https://mellow-paprenjak-a90c80.netlify.app/)
+
 ## Overview
 This project was completed as part of a technical assessment. The requirements were to replicate a design provided via a link and interact with a specified API to showcase a list of items. The project focused on frontend development using React to mimic the design, fetch data from the API, implement a form for adding items, and ensure responsiveness across different devices.
 
