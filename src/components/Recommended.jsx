@@ -14,7 +14,7 @@ const Recommended = () => {
 
 
     return (
-        <div className='recContainer px-12 md:px-10 lg:px-52'>
+        <div className='recContainer px-2 md:px-10 lg:px-52'>
             <Swiper
                 slidesPerView={3}
                 spaceBetween={7}

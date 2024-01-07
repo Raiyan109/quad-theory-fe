@@ -15,6 +15,7 @@ This project was completed as part of a technical assessment. The requirements w
 - Frontend Framework: React
 - State Management: Context API
 - Frontend Technologies: Swiper.js and Axios 
+- Form Validation: React-hook-form
 - Styling: CSS and Tailwind.
 
 ## Installation

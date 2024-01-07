@@ -15,8 +15,9 @@ const Navbar = () => {
                 </div>
                 <div>
                     <select
-                        name="sort"
+                        name="menu"
                         className="select"
+                        defaultValue="Menu"
                     >
                         <option value="home">Home</option>
                         <option value="details">Details</option>

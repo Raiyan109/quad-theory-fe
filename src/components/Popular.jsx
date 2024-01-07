@@ -13,7 +13,7 @@ const Popular = () => {
     const [showPopup, setShowPopup] = useState(false)
     const { foods } = useContext(Food_Context)
     return (
-        <div className="popularContainer px-12 md:px-10 lg:px-52">
+        <div className="popularContainer px-2 md:px-10 lg:px-52">
             <Swiper
                 slidesPerView={3}
                 spaceBetween={10}
