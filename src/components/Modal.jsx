@@ -1,13 +1,17 @@
 import { useContext, useRef, useState } from "react";
 import { FaX } from "react-icons/fa6";
 import { Food_Context } from "../context/FoodProvider";
+import { useForm } from 'react-hook-form'
+import { DevTool } from "@hookform/devtools";
 
 // eslint-disable-next-line react/prop-types
 const Modal = ({ setShowPopup, showPopup }) => {
+
+    const form = useForm()
+    const { register, control } = form
     const [formData, setFormData] = useState({
         Name: '',
         ImageUrl: '',
-        // Add other fields as required
     });
     const { foods, setFoods } = useContext(Food_Context)
 
@@ -53,15 +57,19 @@ const Modal = ({ setShowPopup, showPopup }) => {
                             type="text"
                             placeholder="Item Name"
                             className="w-full h-12 px-4 text-black border-gray-300 rounded-md"
-                            value={formData.name}
-                            name="Name"
+                            value={formData.Name}
+                            // name="Name"
+                            {...register("Name")}
+                            id="name"
                             onChange={handleChange}
                         />
                         <input type="text"
                             placeholder="Item Image Url"
                             className="w-full h-12 px-4 text-black border-gray-300 rounded-md"
-                            value={formData.url}
-                            name="ImageUrl"
+                            value={formData.ImageUrl}
+                            // name="ImageUrl"
+                            {...register("ImageUrl")}
+                            id="imageUrl"
                             onChange={handleChange}
                         />
                         <div className="flex items-center justify-center">
@@ -70,6 +78,7 @@ const Modal = ({ setShowPopup, showPopup }) => {
                             </button>
                         </div>
                     </form>
+                    <DevTool control={control} />
                 </div>
             </div>
         </div>
