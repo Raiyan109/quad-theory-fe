@@ -1,8 +1,12 @@
 .recButtonContainer {
-    position: absolute;
-    top: -70;
+    /* position: absolute;
+    top: 0; */
 }
 
-.recBtn1 {}
+.recBtn1 {
+    color: gray;
+}
 
-.recBtn2 {}
+.recBtn2 {
+    color: black;
+}

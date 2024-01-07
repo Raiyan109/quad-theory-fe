@@ -8,7 +8,7 @@ import RecSwiperBtn from './RecSwiperBtn';
 
 const Recommended = () => {
     return (
-        <div>
+        <div className='recContainer py-10 px-12 md:px-10 lg:px-32'>
             <Swiper
                 slidesPerView={1}
                 spaceBetween={10}
@@ -32,8 +32,13 @@ const Recommended = () => {
                 modules={[Pagination]}
                 className="mySwiper"
             >
-                <div className='flex justify-between items-center'>
+                <div className='recHeader'>
                     <h1>Recommended</h1>
+                </div>
+                <div className='recArrow'>
+                    <div>
+                        <button className="text-orange-400" >Add More</button>
+                    </div>
                     <RecSwiperBtn />
                 </div>
                 {Foods.map((food) => (
