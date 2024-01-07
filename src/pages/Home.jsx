@@ -6,7 +6,7 @@ import Recommended from "../components/Recommended";
 
 const Home = () => {
     return (
-        <div className="space-y-20">
+        <div className="space-y-10">
             <Navbar />
             <Hero />
             <Popular />
