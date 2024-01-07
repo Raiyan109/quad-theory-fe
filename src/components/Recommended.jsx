@@ -13,7 +13,7 @@ const Recommended = () => {
     return (
         <div className='recContainer py-10 px-12 md:px-10 lg:px-32'>
             <Swiper
-                slidesPerView={1}
+                slidesPerView={3}
                 spaceBetween={10}
                 // pagination={{
                 //     clickable: true,
@@ -36,7 +36,7 @@ const Recommended = () => {
                 className="mySwiper"
             >
                 <div className='recHeader'>
-                    <h1>Recommended</h1>
+                    <h1 className='font-medium'>Recommended</h1>
                 </div>
                 <div className='recArrow'>
                     <div>
