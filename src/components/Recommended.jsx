@@ -2,14 +2,17 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
-import Foods from '../../public/foods.json'
 import '../styles/recommended.css'
 import RecSwiperBtn from './RecSwiperBtn';
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import Modal from './Modal';
+import { Food_Context } from '../context/FoodProvider';
 
 const Recommended = () => {
     const [showPopup, setShowPopup] = useState(false)
+    const { foods } = useContext(Food_Context)
+
+
     return (
         <div className='recContainer py-10 px-12 md:px-10 lg:px-32'>
             <Swiper
@@ -47,10 +50,10 @@ const Recommended = () => {
                     {showPopup && <Modal setShowPopup={setShowPopup} showPopup={showPopup} />}
                     <RecSwiperBtn />
                 </div>
-                {Foods.map((food) => (
-                    <SwiperSlide key={food.id}>
-                        <img src={food.image} alt="" />
-                        <h5 className='text-center text-gray-500'>{food.name}</h5>
+                {foods.map((food) => (
+                    <SwiperSlide key={food.Id}>
+                        <img src={food.ImageUrl} alt="" />
+                        <h5 className='text-center text-gray-500'>{food.Name}</h5>
                     </SwiperSlide>
                 ))}
 

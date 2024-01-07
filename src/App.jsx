@@ -1,11 +1,14 @@
 import './App.css'
+import FoodProvider from './context/FoodProvider'
 import Home from './pages/Home'
 
 function App() {
 
   return (
     <>
-      <Home />
+      <FoodProvider>
+        <Home />
+      </FoodProvider>
     </>
   )
 }
