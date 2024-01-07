@@ -14,10 +14,10 @@ const Recommended = () => {
 
 
     return (
-        <div className='recContainer py-10 px-12 md:px-10 lg:px-32'>
+        <div className='recContainer px-12 md:px-10 lg:px-52'>
             <Swiper
                 slidesPerView={3}
-                spaceBetween={10}
+                spaceBetween={7}
                 // pagination={{
                 //     clickable: true,
                 // }}
