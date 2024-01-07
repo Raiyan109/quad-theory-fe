@@ -6,21 +6,21 @@ import '../styles/footer.css'
 
 const Footer = () => {
     return (
-        <div className="bg-amber-500 w-full p-10 flex justify-around items-center gap-20  bottom-0">
-            <div className='flex flex-col gap-10 md:gap-20'>
+        <div className="bg-amber-500 w-full p-10 flex justify-evenly items-center gap-10  bottom-0">
+            <div className='flex flex-col flex-wrap gap-10 md:gap-24'>
                 <div>
                     <div className="flex items-center bg-white pl-2 h-16 md:h-9 rounded-xl">
                         <input type="text"
                             className="inputText placeholder:text-gray-300"
                             placeholder="Enter your Email"
                         />
-                        <div className='bg-transparent md:bg-orange-500 text-orange-400 md:text-white rounded-lg text-md md:text-sm font-bold md:font-normal py-1 pl-7 pr-4 mr-2 flex items-center gap-1'>
+                        <div className='bg-transparent md:bg-orange-500 text-orange-400 md:text-white rounded-xl text-md md:text-sm font-bold md:font-normal py-1 pl-7 pr-4 mr-2 flex items-center gap-1'>
                             <button className=''>Subscribe</button>
                             <FaArrowRightLong />
                         </div>
                     </div>
                 </div>
-                <div className='flex items-center gap-5 md:gap-10 flex-col-reverse md:flex-row'>
+                <div className='flex items-center justify-between gap-5 md:gap-48 flex-col-reverse md:flex-row'>
                     <div className='flex flex-col justify-center items-center md:items-start gap-5 md:gap-1'>
                         <h1 className='text-3xl md:text-2xl font-bold'>pti<span className='font-bold text-orange-500 text-4xl'>.</span></h1>
                         <h2 className='text-md md:text-sm font-bold'>Copyright@Tripp.All Right Reserved</h2>
@@ -39,7 +39,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className='hidden md:block'>
-                <img src={footerImg} alt="" className='w-64 h-64 object-contain' />
+                <img src={footerImg} alt="" className='w-[300px] h-[300px] object-contain' />
             </div>
         </div>
     );
