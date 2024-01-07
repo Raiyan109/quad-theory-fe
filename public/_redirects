@@ -1,1 +1,1 @@
-<!-- /api/*  http://www.api.technicaltest.quadtheoryltd.com/api/Item?page=1&pageSize=10/:splat  200! -->
+/quad/*  http://www.api.technicaltest.quadtheoryltd.com/:splat  200!
