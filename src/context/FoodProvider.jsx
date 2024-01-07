@@ -16,7 +16,8 @@ const FoodProvider = ({ children }) => {
         fetchFoods()
     }, [])
     const value = {
-        foods
+        foods,
+        setFoods
     }
     console.log(value);
     return (
