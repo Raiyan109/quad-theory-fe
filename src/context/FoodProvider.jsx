@@ -9,7 +9,7 @@ const FoodProvider = ({ children }) => {
 
     useEffect(() => {
         const fetchFoods = async () => {
-            const { data } = await axios.get('http://www.api.technicaltest.quadtheoryltd.com/api/Item?page=1&pageSize=10')
+            const { data } = await axios.get('/api/')
             console.log(data);
             setFoods(data.Items)
         }
