@@ -7,9 +7,9 @@
     outline: none;
     cursor: pointer;
     padding: 5px 5px;
-    /* -webkit-appearance: none;
+    -webkit-appearance: none;
     -moz-appearance: none;
-    -ms-appearance: none; */
+    -ms-appearance: none;
     appearance: none;
     background-image: url("../assets/down-arrow-svgrepo-com.svg");
     background-repeat: no-repeat;

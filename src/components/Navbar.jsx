@@ -3,7 +3,7 @@ import { GoPerson } from "react-icons/go";
 import '../styles/navbar.css'
 const Navbar = () => {
     return (
-        <div className="flex justify-center space-x-52 items-center  px-5 py-8">
+        <div className="flex justify-center space-x-32 items-center  px-5 py-8">
             <h1 className="font-bold text-xl">pti.</h1>
             <div className="flex">
                 <div className="flex items-center bg-white px-2 h-8 rounded-md">
